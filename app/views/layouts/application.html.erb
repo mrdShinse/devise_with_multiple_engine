@@ -9,7 +9,8 @@
   </head>
 
   <body>
-    <% if current_user%>
+    <% if current_user %>
+      <%= current_user.attributes %>
       <%= button_to 'logout', destroy_user_session_path, method: :delete %>
     <% end %>
     <%= yield %>
