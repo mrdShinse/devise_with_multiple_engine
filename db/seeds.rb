@@ -7,3 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 user = User.find_or_initialize_by(id: 1)
 user.update!(email: 'mysample@123.com', password: 'mysample@123')
+
+admin = Admin::Administrator.find_or_initialize_by(id: 1)
+admin.update!(email: 'mysample@123.com', password: 'mysample@123')
